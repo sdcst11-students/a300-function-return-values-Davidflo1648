@@ -10,13 +10,20 @@ assert hypotenuse(3,4,True) == 5
 (2 points)
 """
 
-def hypotenuse():
-    return
+def hypotenuse(a, b, c):
+    a = float(input("Enter a number: "))
+    b = float(input("Enter another number: "))
+    c = bool(c)
 
-if __name__ == "__main__":
-    assert hypotenuse(3,4,True) == 5
-    assert hypotenuse(5,12,True) == 13
-    assert hypotenuse(3,5,False) == 4
-    assert hypotenuse(13,12,False) == 5
+    if c:
+        return (a**2 + b*2)**0.5
+    else:
+        return max(a, b)
+
+#if __name__ == "__main__":
+    #assert hypotenuse(3,4,True) == 5
+    #assert hypotenuse(5,12,True) == 13
+    #assert hypotenuse(3,5,False) == 4
+    #assert hypotenuse(13,12,False) == 5
     
     
