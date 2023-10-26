@@ -26,4 +26,4 @@ def hypotenuse(a, b, c):
     #assert hypotenuse(3,5,False) == 4
     #assert hypotenuse(13,12,False) == 5
     
-    
+hypotenuse()
