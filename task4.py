@@ -7,8 +7,13 @@ Return False if the number is not an integer
 (2 points)
 """
 
-def isInteger():
-    return
+def isInteger(num):
+    if isinstance(num, float):
+        return num.is_integer()
+    elif isinstance(num, int):
+        return True
+    else:
+        return False
 
 if __name__ == "__main__":
   assert isInteger( 9.5 ) == False
