@@ -11,6 +11,8 @@ Example: The factors of 10 are 1, 2, 5, 10
 
 def factors(x):
     l = []
+    x = int(input())
+
     for i in range(1,x+1):
         if x%i == 0:
             l.append(i)
@@ -32,5 +34,7 @@ if __name__ == "__main__":
         if i != n[-1]:
             print(", ", end="")
     else: print()
+
+
 
     
